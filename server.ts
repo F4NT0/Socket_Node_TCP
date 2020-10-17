@@ -8,7 +8,7 @@ let network = require('net');
 //Variables
 const PORT = 8124;
 
-//Create Server
+//Create TCP Server
 let server = network.createServer(function(connection){
     console.log(color.green("Connected to Server"));
 
