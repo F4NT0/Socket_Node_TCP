@@ -14,6 +14,6 @@
 * Use this Command in another Terminal:
 
 ```shell
-> nc 127.0.0.1 8124 < info.txt
+$ nc 127.0.0.1 8124 < info.txt
 ```
 
