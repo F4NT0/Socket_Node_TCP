@@ -1,0 +1,23 @@
+{
+  "name": "socket_node_tcp",
+  "version": "1.0.0",
+  "description": "Socket TCP Node.js",
+  "main": "index.ts",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/F4NT0/Socket_Node_TCP.git"
+  },
+  "author": "Gabriel Fanto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/F4NT0/Socket_Node_TCP/issues"
+  },
+  "homepage": "https://github.com/F4NT0/Socket_Node_TCP#readme",
+  "dependencies": {
+    "cli-color": "^2.0.0",
+    "typescript-require": "^0.3.0"
+  }
+}
