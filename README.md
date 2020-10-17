@@ -3,32 +3,17 @@
 ### How Start
 
 * `npm init`
+* `net` Module already come with Node.js
 * `npm install cli-color`
+* [Using JS require function on Typescript](Markdown/modules.md)
 
-### How to configure modules like javascript on Typescript
+### Test Server with netcat(nc) on Linux
 
-* Install **typescript-require**, used to utilize _require_ function in Typescript like Javascript
+* Use the file **infos.txt** to test Server
+* Running server with `node server.ts`
+* Use this Command in another Terminal:
 
 ```shell
-> npm install typescript-require
-```
-* Call the function **require** with the module _typescript-require_ to call others modules like Javascript.
-
-```typescript
-require('typescript-require');
+> nc 127.0.0.1 8124 < info.txt
 ```
 
-* Complete Example:
-
-```typescript
-// Initialization
-require('typescript-require');
-
-//Calling Module
-let color = require('cli-color');
-
-//Test
-console.log(color.green("Hello World!"));
-```
-
-**OBS**: use this only if you are creating a project without a Framework.
