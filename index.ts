@@ -1,4 +1,9 @@
-//Initialization
-require('typescript-require');
+/**
+ * -----------------------------------------------
+ * THIS FILE IS ONLY FOR TEST CODE
+ * -----------------------------------------------
+ * ALL THE OFFICIAL FILES IS INSIDE SOCKETS FOLDER
+ * -----------------------------------------------
+ */
 
-//Calling Modules
+ 

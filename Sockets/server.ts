@@ -1,10 +1,8 @@
-// Initialization
+//Modules
 require('typescript-require');
-
-//Calling Modules
 var color = require('cli-color');
 var network = require('net');
-const PORT = 8124;
+const PORT = 8124
 
 class Server{
     //Variables
