@@ -1,8 +1,8 @@
-//Modules
+//Import Modules
 require('typescript-require');
 var color = require('cli-color');
 var network = require('net');
-const PORT = 8124
+const PORTSERVER = 8124
 
 class Server{
     //Variables
@@ -15,7 +15,7 @@ class Server{
             console.log(color.green("Connected to Server"));
     
             connection.on('data',function(data){    
-                console.log(color.blue(data + ' From ' + connection.remoteAddress + ' ' + connection.remotePort));
+                console.log(color.blue(data + ' From ' + connection.remoteAddress + ' ' + connection.remotePORTSERVER));
                 connection.write('[Repeating File]\n ' + data);
             });
     
@@ -23,11 +23,11 @@ class Server{
                 console.log(color.red("Client Closed Connection"));
             });
     
-        }).listen(PORT);
+        }).listen(PORTSERVER);
 
-        //Listening to PORT
+        //Listening to PORTSERVER
         this.server.on('listening',function(){
-            console.log(color.green('Listening Port ' + PORT));
+            console.log(color.green('Listening port ' + PORTSERVER));
         });
 
         //Catch Error
@@ -36,13 +36,14 @@ class Server{
                 console.warn('Address in use,retrying...');
                 setTimeout(() => {
                     this.server.close();
-                    this.server.listen(PORT);
+                    this.server.listen(PORTSERVER);
                 },1000);
             }else{
                 console.error(err);
             }
         });
     }
-};
+}
 
-const teste = new Server();
+// RUNNING SERVER
+const server = new Server();
