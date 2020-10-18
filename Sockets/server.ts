@@ -15,8 +15,8 @@ class Server{
             console.log(color.green("Connected to Server"));
     
             connection.on('data',function(data){    
-                console.log(color.blue(data + ' From ' + connection.remoteAddress + ' ' + connection.remotePORTSERVER));
-                connection.write('[Repeating File]\n ' + data);
+                console.log(color.blue(data + ' From ' + connection.remoteAddress + ' ' + connection.remotePort));
+                connection.write('[Repeating File] ' + data + '\n');
             });
     
             connection.on('close', function(){
